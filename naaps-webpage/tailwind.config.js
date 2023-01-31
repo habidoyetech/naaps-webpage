@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'brand-secondary-light': 'rgba(90,11,77,1)',
+        'brand-primary': 'rgba(24,29,54,1)',
       }
     },
   },

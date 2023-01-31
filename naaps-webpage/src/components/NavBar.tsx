@@ -23,8 +23,8 @@ const NavBar = () => {
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line> <line x1="6" y1="6" x2="18" y2="18"></line></svg>
               </div>
           </div>
-          <div className='items-center hidden w-3/4 md:flex'>
-            <ul className='flex items-center justify-between w-2/3'>
+          <div className='items-center justify-between hidden w-3/4 md:flex'>
+            <ul className='flex items-center justify-between w-1/3'>
               <Link href='/'>
                 About Us
               </Link>
@@ -66,9 +66,13 @@ const NavBar = () => {
               <Link href='/news'>News</Link>
               <Link href='/faqs'>Faqs</Link>
             </ul>
-            <div className='w-1/3 flex justify-end items-center space-x-8'>
+            <div className='flex justify-end items-center space-x-8'>
+              <Link href='/auth' className='cursor-pointer'>Log In</Link>
                 <div className='relative flex items-center justify-center'>
-                  <Link href='/become-a-member' className='w-full px-6 py-4 font-medium text-brand-secondary-light bg-white rounded-lg text-sm cursor-pointer'>Become a Member</Link>
+                  <Link href='/donate' className='w-full px-6 py-3 font-medium text-brand-secondary-light bg-white rounded-lg text-sm cursor-pointer'>Donate</Link>
+                </div>
+                <div className='relative flex items-center justify-center'>
+                  <Link href='/become-a-member' className='w-full px-6 py-3 font-medium text-brand-secondary-light bg-white rounded-lg text-sm cursor-pointer'>Become a Member</Link>
                 </div>
             </div>
           </div>
